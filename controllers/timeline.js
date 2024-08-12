@@ -1,9 +1,5 @@
 const timelineController = {};
 const Timeline = require('../models/timeline');
-const Ticket = require('../models/tickets');
-const userController = require('./user');
-const mongoose = require('../config/db');
-const { timeline } = require('../routes');
 
 
 timelineController.insertTimeline = async (timelineData) => {
@@ -21,7 +17,7 @@ timelineController.insertTimeline = async (timelineData) => {
     }
 }
 
-timelineController.getTimelineData = async (ticketData) => {
+timelineController.getTimelineData = async () => {
     try {
         let data = await Timeline.getTimelineData();
         if (data && data.length) {

@@ -22,6 +22,8 @@ app.use('/users/', routes.user);
 
 app.use('/timeline/', routes.timeline);
 
+app.use('/transaction/', routes.transaction);
+
 // private routes
 
 module.exports = app;

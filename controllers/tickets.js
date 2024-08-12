@@ -19,7 +19,6 @@ ticketController.createTicket = async (ticketData) => {
     try {
         let { userId, ticketId, subject, category, status, priority, createdDate, resolvedDate } = ticketData;
         let user = await userController.getUserData(userId);
-        console.log({ userId, ticketId, subject, category, status, priority, createdDate, resolvedDate }, user)
         if (user.status === 200) {
             let query = { "ticketId": ticketId, "subject": subject, "user": user.userData, "category": category, "status": status, "priority": priority, "createdDate": createdDate, "resolvedDate": resolvedDate };
             if (status === "closed") {

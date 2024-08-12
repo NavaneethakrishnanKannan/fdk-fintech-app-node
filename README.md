@@ -2,7 +2,7 @@
 Customer Support Application
 
 ## About The App
-Enhance Fintech Support Management App is designed to empower support staff by providing them with a comprehensive tool to efficiently resolve customer queries and issues.
+Enhanced Fintech Support Management App is designed to empower support staff by providing them with a comprehensive tool to efficiently resolve customer queries and issues.
 
 # Environment vars
 This project uses the following environment variables:

@@ -3,7 +3,7 @@ const timelineController = require('../controllers/timeline');
 const { celebrate, errors, Joi } = require('celebrate');
 
 
-/** Create the New Timelin. Params are Validated Using JOI */
+/** Create the New Timeline. Params are Validated Using JOI */
 
 router.post('/createticket', celebrate({
     body: Joi.object().keys({

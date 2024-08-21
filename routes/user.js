@@ -2,7 +2,7 @@ const router = require('express').Router();
 const userController = require('../controllers/user');
 const { celebrate, errors, Joi } = require('celebrate');
 
-/** Create the New Ticket. Params are Validated Using JOI */
+/** Get User Details. Params are Validated Using JOI */
 
 router.get('/getUser', celebrate({
     query: Joi.object().keys({

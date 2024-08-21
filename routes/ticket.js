@@ -2,7 +2,7 @@ const router = require('express').Router();
 const ticketController = require('../controllers/tickets');
 const { celebrate, errors, Joi } = require('celebrate');
 
-/** Create the New Ticket. Params are Validated Using JOI */
+/** Create a New Ticket. Params are Validated Using JOI */
 
 router.post('/createticket', celebrate({
     body: Joi.object().keys({
@@ -43,7 +43,7 @@ router.get("/search", celebrate({
     })
 });
 
-/** Create the New Ticket. Params are Validated Using JOI */
+/** Resolving the Ticket. Params are Validated Using JOI */
 
 router.put('/resolve', celebrate({
     query: Joi.object().keys({
